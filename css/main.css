@@ -192,7 +192,8 @@ footer nav img:hover {
 
 /* element flex */
 .page-index .realisation li  {
-    max-width: 50%;
+    flex-basis: 50%; /* taille de base */
+    flex-grow: 2; /* taille max en nbr d'élément */
     padding: 10px;
 }
 
