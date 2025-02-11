@@ -48,6 +48,11 @@ body {
     font-weight: 400;
     margin: 0;
 }
+/* dois toujours apparitre pour le comportement des img */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 h1,
 h2,
@@ -172,4 +177,27 @@ footer nav img:hover {
     }
 }
 
+/* page index */
+
+/* containaire felex box*/
+.page-index .realisation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: green;
+    list-style-type: none;
+    gap: 20px; /* crée un espace*/
+    margin: 0;
+    padding: 0;
+}
+
+/* element flex */
+.page-index .realisation li  {
+    max-width: calc(50% - 20px);
+}
+
+/*suppersion des marges par défault des figures */
+.page-index .realisation figure {
+    margin: 0;
+}
 
