@@ -184,16 +184,16 @@ footer nav img:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: green;
     list-style-type: none;
-    gap: 20px; /* crée un espace*/
+    /* gap: 20px; crée un espace*/
     margin: 0;
     padding: 0;
 }
 
 /* element flex */
 .page-index .realisation li  {
-    max-width: calc(50% - 20px);
+    max-width: 50%;
+    padding: 10px;
 }
 
 /*suppersion des marges par défault des figures */
