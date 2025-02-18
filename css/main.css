@@ -179,7 +179,7 @@ footer nav img:hover {
 
 /* page index */
 
-/* containaire felex box*/
+/* containair flexbox*/
 .page-index .realisation {
     display: flex;
     flex-wrap: wrap;
@@ -200,5 +200,41 @@ footer nav img:hover {
 /*suppersion des marges par défault des figures */
 .page-index .realisation figure {
     margin: 0;
+}
+
+/***************************
+MEDIA QUERIES
+****************************/
+
+
+@media screen and (max-width: 480px) {
+    /* Element flexbox */
+    .page-index .realisation li  {
+        flex-basis: calc(100% / 3); /* taille de base */
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+    .page-index .realisation li  {
+        flex-basis: calc(100% / 4); /* taille de base */
+    }
+
+}
+
+@media (max-width: 800px) {
+    .page-index .realisation li  {
+        flex-basis: calc(100% / 5); /* taille de base */
+    }
+}
+
+@media print {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
 }
 
